@@ -106,7 +106,7 @@ div_checkout_button = driver.find_element_by_id('checkout')
 
 div_checkout_button.click()
 
-time.sleep(3)
+time.sleep(2)
 
 first_name = 'John'
 last_name = 'Doe'
@@ -120,11 +120,13 @@ first_name_input.send_keys(first_name)
 last_name_input.send_keys(last_name)
 zip_code_input.send_keys(zip_code)
 
-time.sleep(3)
+time.sleep(2)
 
 div_continue_checkout_button = driver.find_element_by_id('continue')
 
 div_continue_checkout_button.click()
+
+time.sleep(2)
 
 # Click Finish Button
 

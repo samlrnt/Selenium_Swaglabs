@@ -85,6 +85,7 @@ div_shoppingcart_buttons = driver.find_element_by_id('shopping_cart_container')
 
 div_shoppingcart_buttons.click()
 
+time.sleep(2)
 # Find the Price of Sauce Labs Backpack in the cart items
 
 div_cart_backpack_elements = driver.find_element_by_xpath(
@@ -97,7 +98,7 @@ print(div_cart_backpack_elements.text)
 
 assert cart_price == catalogue_price, "Item Price is different"
 
-time.sleep(2)
+time.sleep(3)
 
 # Continue Checkout Process
 
@@ -105,7 +106,7 @@ div_checkout_button = driver.find_element_by_id('checkout')
 
 div_checkout_button.click()
 
-time.sleep(2)
+time.sleep(3)
 
 first_name = 'John'
 last_name = 'Doe'
@@ -119,7 +120,7 @@ first_name_input.send_keys(first_name)
 last_name_input.send_keys(last_name)
 zip_code_input.send_keys(zip_code)
 
-time.sleep(2)
+time.sleep(3)
 
 div_continue_checkout_button = driver.find_element_by_id('continue')
 
